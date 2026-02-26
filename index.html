@@ -1,0 +1,392 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wanderlust Voyages — Discover the World</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header>
+    <div class="nav-inner">
+      <!-- LOGO (branding element) -->
+      <a href="index.html" class="logo">
+        <div class="logo-icon">✈</div>
+        Wanderlust <span>Voyages</span>
+      </a>
+
+      <!-- NAV -->
+      <nav>
+        <ul id="nav-menu" class="menu">
+          <li><a href="index.html" class="nav-active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Destinations</a></li>
+          <li><a href="booking.html">Book</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-btn" id="theme-toggle" aria-label="Toggle theme">
+          <span id="theme-icon">🌙</span>
+        </button>
+        <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="page-hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="label">✦ Premium Travel Experiences</p>
+      <h1>Your World.<br />Your Way.</h1>
+      <p>Curated luxury adventures, cultural escapes, and family journeys to over 80 destinations worldwide. Let Wanderlust Voyages craft your perfect trip.</p>
+      <div class="hero-cta">
+        <a href="services.html" class="btn btn-primary">Explore Destinations</a>
+        <a href="booking.html" class="btn btn-secondary">Book a Trip</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>↓</span>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===== STAT BAR ===== -->
+  <div class="stat-bar">
+    <div class="stat-grid">
+      <div>
+        <div class="stat-num">12+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div>
+        <div class="stat-num">80+</div>
+        <div class="stat-label">Destinations</div>
+      </div>
+      <div>
+        <div class="stat-num">25k+</div>
+        <div class="stat-label">Happy Travellers</div>
+      </div>
+      <div>
+        <div class="stat-num">4.9★</div>
+        <div class="stat-label">Average Rating</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+
+    <!-- Featured Destinations Section -->
+    <section>
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="label">✦ Top Picks</p>
+          <h2>Popular Destinations</h2>
+          <p>Hand-selected experiences for every kind of traveller — from sun-soaked beaches to snow-capped peaks.</p>
+        </div>
+
+        <!-- Destination Filter Buttons (JS: dynamic content) -->
+        <div class="flex-center mt-1 mb-0" style="gap:0.6rem;flex-wrap:wrap;margin-bottom:2rem;">
+          <button class="btn btn-outline btn-sm filter-btn active-filter" data-filter="all">All</button>
+          <button class="btn btn-outline btn-sm filter-btn" data-filter="beach">Beach</button>
+          <button class="btn btn-outline btn-sm filter-btn" data-filter="adventure">Adventure</button>
+          <button class="btn btn-outline btn-sm filter-btn" data-filter="culture">Culture</button>
+        </div>
+
+        <div class="grid-3 reveal">
+          <!-- Card 1 -->
+          <article class="card dest-card" data-cat="beach">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&auto=format&fit=crop&q=80" alt="Bali tropical beach with palm trees" class="card-img" />
+            <div class="card-body">
+              <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:0.5rem;">
+                <span class="badge badge-gold">Beach</span>
+                <div class="stars">★★★★★</div>
+              </div>
+              <h3>Bali, Indonesia</h3>
+              <p>Terraced rice paddies, sacred temples, and pristine beaches await in this island paradise.</p>
+              <hr />
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <div class="price"><sup>R</sup>18,500<span>/person</span></div>
+                <a href="services.html" class="btn btn-outline btn-sm">View</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card dest-card" data-cat="adventure">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&auto=format&fit=crop&q=80" alt="Majestic Swiss Alps mountain landscape" class="card-img" />
+            <div class="card-body">
+              <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:0.5rem;">
+                <span class="badge badge-teal">Adventure</span>
+                <div class="stars">★★★★★</div>
+              </div>
+              <h3>Swiss Alps, Switzerland</h3>
+              <p>Glacier hikes, scenic train rides, and luxury chalets nestled among Europe's highest peaks.</p>
+              <hr />
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <div class="price"><sup>R</sup>32,000<span>/person</span></div>
+                <a href="services.html" class="btn btn-outline btn-sm">View</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card dest-card" data-cat="culture">
+            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&auto=format&fit=crop&q=80" alt="Traditional Japanese temple in Kyoto" class="card-img" />
+            <div class="card-body">
+              <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:0.5rem;">
+                <span class="badge badge-gold">Culture</span>
+                <div class="stars">★★★★★</div>
+              </div>
+              <h3>Tokyo, Japan</h3>
+              <p>Ancient temples, geisha districts, and cherry blossom gardens in Japan's cultural heart.</p>
+              <hr />
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <div class="price"><sup>R</sup>24,900<span>/person</span></div>
+                <a href="services.html" class="btn btn-outline btn-sm">View</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center mt-2">
+          <a href="services.html" class="btn btn-dark">See All Destinations →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery / Carousel Section -->
+    <section class="alt-bg">
+      <div class="container">
+        <div class="grid-2" style="align-items:center;gap:3rem;">
+          <div class="reveal">
+            <p class="label">✦ Our Gallery</p>
+            <h2>Moments from the Road</h2>
+            <p>From the misty highlands of Scotland to the turquoise waters of the Maldives, every journey with Wanderlust Voyages is a story worth telling.</p>
+            <br />
+            <p class="highlight">
+              <em>"Travel is the only thing you buy that makes you richer."</em><br />
+              — Wanderlust Voyages Motto
+            </p>
+            <div class="mt-2">
+              <a href="about.html" class="btn btn-outline">Our Story →</a>
+            </div>
+          </div>
+
+          <!-- JS Feature: Image Carousel -->
+          <div class="carousel reveal">
+            <div class="carousel-slides">
+              <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&auto=format&fit=crop&q=80" alt="Travellers exploring a mountain village at sunrise" />
+                <div class="carousel-caption">Mountain Village at Sunrise</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=800&auto=format&fit=crop&q=80" alt="Couple enjoying sunset on a tropical beach" />
+                <div class="carousel-caption">Tropical Sunset Escape</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=800&auto=format&fit=crop&q=80" alt="Exploring ancient ruins in Greece" />
+                <div class="carousel-caption">Ancient Ruins of Greece</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1519922639192-e73293ca430e?w=800&auto=format&fit=crop&q=80" alt="Safari adventure in the African savannah" />
+                <div class="carousel-caption">African Safari Adventure</div>
+              </div>
+            </div>
+            <button class="carousel-btn prev" aria-label="Previous">‹</button>
+            <button class="carousel-btn next" aria-label="Next">›</button>
+            <div class="carousel-dots">
+              <button class="carousel-dot active"></button>
+              <button class="carousel-dot"></button>
+              <button class="carousel-dot"></button>
+              <button class="carousel-dot"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section>
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="label">✦ Why Us</p>
+          <h2>Travel Differently</h2>
+          <p>We go beyond booking — we craft experiences tailored to you.</p>
+        </div>
+
+        <div class="grid-4 reveal">
+          <article class="card" style="text-align:center;padding:2rem 1.4rem;">
+            <div style="font-size:2.5rem;margin-bottom:1rem;">🗺️</div>
+            <h4>Expert Curation</h4>
+            <p style="font-size:0.92rem;">Every itinerary is designed by travel experts who know each destination intimately.</p>
+          </article>
+          <article class="card" style="text-align:center;padding:2rem 1.4rem;">
+            <div style="font-size:2.5rem;margin-bottom:1rem;">💎</div>
+            <h4>Luxury Partners</h4>
+            <p style="font-size:0.92rem;">Access to exclusive 5-star hotels, private guides, and VIP airport services.</p>
+          </article>
+          <article class="card" style="text-align:center;padding:2rem 1.4rem;">
+            <div style="font-size:2.5rem;margin-bottom:1rem;">🛡️</div>
+            <h4>Safe Travels</h4>
+            <p style="font-size:0.92rem;">24/7 traveller support and comprehensive travel insurance options.</p>
+          </article>
+          <article class="card" style="text-align:center;padding:2rem 1.4rem;">
+            <div style="font-size:2.5rem;margin-bottom:1rem;">🌿</div>
+            <h4>Eco Conscious</h4>
+            <p style="font-size:0.92rem;">Carbon-offset programs and partnerships with sustainable tour operators.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Limited Offer Countdown -->
+    <section class="alt-bg">
+      <div class="container text-center reveal">
+        <p class="label">✦ Flash Sale</p>
+        <h2>20% Off All Europe Packages</h2>
+        <p>Book any European destination package before the timer runs out and save big!</p>
+        <div id="countdown-display">Loading...</div>
+        <div class="mt-2">
+          <a href="services.html" class="btn btn-primary">Grab the Deal</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section>
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="label">✦ Reviews</p>
+          <h2>What Our Travellers Say</h2>
+        </div>
+
+        <div class="grid-3 reveal">
+          <div class="testimonial">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Wanderlust Voyages planned the most perfect honeymoon in the Maldives. Every detail was flawless — from the seaplane transfer to the private dining on the beach."</blockquote>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=100&auto=format&fit=crop&q=80" alt="Portrait of Sarah M." class="testimonial-avatar" />
+              <div>
+                <strong>Sarah M.</strong>
+                <p style="font-size:0.8rem;margin:0;">Cape Town, SA</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Our family trip to Japan was beyond words. The kids loved the bullet trains, we loved the food and temples. We've already booked our next trip through them."</blockquote>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&auto=format&fit=crop&q=80" alt="Portrait of James T." class="testimonial-avatar" />
+              <div>
+                <strong>James T.</strong>
+                <p style="font-size:0.8rem;margin:0;">Johannesburg, SA</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="stars">★★★★★</div>
+            <blockquote>"The Swiss Alps tour was the adventure of a lifetime. Private guiding, stunning lodges, and an itinerary that hit every peak — literally. 10/10 would recommend."</blockquote>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&auto=format&fit=crop&q=80" alt="Portrait of Lerato N." class="testimonial-avatar" />
+              <div>
+                <strong>Lerato N.</strong>
+                <p style="font-size:0.8rem;margin:0;">Pretoria, SA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section style="background:var(--teal-dark);padding:4rem 0;">
+      <div class="container text-center reveal">
+        <p class="label" style="color:var(--gold-light);">✦ Stay Inspired</p>
+        <h2 style="color:white;">Get Travel Deals in Your Inbox</h2>
+        <p style="color:rgba(255,255,255,0.7);max-width:480px;margin:0.8rem auto 2rem;">
+          Subscribe for weekly destination inspiration, exclusive deals, and travel tips from our experts.
+        </p>
+        <form id="contactForm" style="display:flex;gap:0.8rem;max-width:480px;margin:0 auto;flex-wrap:wrap;">
+          <div id="form-msg" class="form-message" style="width:100%;"></div>
+          <div class="form-group" style="flex:1;margin:0;">
+            <input type="text" id="name" placeholder="Your name" style="border-radius:50px;" />
+          </div>
+          <div class="form-group" style="flex:1;margin:0;">
+            <input type="email" id="email" placeholder="Your email" style="border-radius:50px;" />
+          </div>
+          <textarea id="message" style="display:none;">Newsletter subscription</textarea>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="font-size:1.4rem;">
+          <div class="logo-icon">✈</div>
+          Wanderlust <span>Voyages</span>
+        </div>
+        <p>Crafting unforgettable travel experiences since 2012. Your adventure begins with us.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="Instagram">▣</a>
+          <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+          <a href="#" class="social-link" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Destinations</a></li>
+          <li><a href="booking.html">Book a Trip</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Destinations</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">Bali, Indonesia</a></li>
+          <li><a href="services.html">Swiss Alps</a></li>
+          <li><a href="services.html">Kyoto, Japan</a></li>
+          <li><a href="services.html">Santorini</a></li>
+          <li><a href="services.html">Machu Picchu</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul class="footer-links" style="list-style:none;padding:0;">
+          <li>📍 12 Explorer Street, Cape Town, SA</li>
+          <li>📞 +27 21 555 0190</li>
+          <li>✉️ <a href="mailto:hello@wanderlustvoyages.co.za">hello@wanderlustvoyages.co.za</a></li>
+          <li>🕐 Mon–Fri: 08:00–17:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Wanderlust Voyages. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Wanderlust Voyages</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><div class="logo-icon">✈</div>Wanderlust <span>Voyages</span></a>
+      <nav>
+        <ul id="nav-menu" class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Destinations</a></li>
+          <li><a href="booking.html">Book</a></li>
+          <li><a href="contact.html" class="nav-active">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-btn" id="theme-toggle"><span id="theme-icon">🌙</span></button>
+        <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-top">
+    <div class="page-banner">
+      <div class="page-banner-content">
+        <p class="label" style="color:var(--gold-light);">✦ Get In Touch</p>
+        <h1>Contact Wanderlust Voyages</h1>
+        <p>We'd love to help you plan your next adventure. Reach out — we respond within 24 hours.</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section>
+      <div class="container">
+
+        <!-- Contact Cards Row -->
+        <div class="grid-4 reveal" style="margin-bottom:3rem;">
+          <article class="card" style="padding:1.8rem;text-align:center;">
+            <div style="font-size:2rem;margin-bottom:0.8rem;">📍</div>
+            <h4>Our Office</h4>
+            <p style="font-size:0.9rem;">12 Explorer Street<br />De Waterkant, Cape Town<br />Western Cape, 8001</p>
+          </article>
+          <article class="card" style="padding:1.8rem;text-align:center;">
+            <div style="font-size:2rem;margin-bottom:0.8rem;">📞</div>
+            <h4>Phone</h4>
+            <p style="font-size:0.9rem;">+27 21 555 0190<br /><a href="tel:+27215550190">Call Now →</a></p>
+            <p style="font-size:0.8rem;color:var(--muted);">Mon–Fri: 08:00–17:00<br />Sat: 09:00–13:00</p>
+          </article>
+          <article class="card" style="padding:1.8rem;text-align:center;">
+            <div style="font-size:2rem;margin-bottom:0.8rem;">✉️</div>
+            <h4>Email</h4>
+            <p style="font-size:0.9rem;"><a href="mailto:hello@wanderlustvoyages.co.za">hello@wanderlust<br />voyages.co.za</a></p>
+            <p style="font-size:0.8rem;color:var(--muted);">Response within 24 hours</p>
+          </article>
+          <article class="card" style="padding:1.8rem;text-align:center;">
+            <div style="font-size:2rem;margin-bottom:0.8rem;">💬</div>
+            <h4>WhatsApp</h4>
+            <p style="font-size:0.9rem;"><a href="https://wa.me/27215550190" target="_blank" rel="noopener">+27 72 555 0190</a></p>
+            <p style="font-size:0.8rem;color:var(--muted);">Quick replies during<br />business hours</p>
+          </article>
+        </div>
+
+        <!-- Contact Form + Map -->
+        <div class="grid-2 reveal" style="gap:3rem;">
+
+          <!-- Contact Form -->
+          <article class="card" style="padding:2.5rem;">
+            <p class="label">✦ Send a Message</p>
+            <h2 style="margin-bottom:0.5rem;">Write to Us</h2>
+            <hr />
+
+            <div id="form-msg" class="form-message"></div>
+
+            <form id="contactForm" novalidate>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name *</label>
+                  <input type="text" id="name" placeholder="Your full name" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" placeholder="your@email.com" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="e.g. Bali package enquiry" />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message *</label>
+                <textarea id="message" rows="5" placeholder="Tell us how we can help you…"></textarea>
+              </div>
+
+              <!-- Anchor: internal link to booking -->
+              <p style="font-size:0.85rem;color:var(--muted);margin-bottom:1rem;">
+                Ready to book? <a href="booking.html">Go to the booking form →</a>
+              </p>
+
+              <button type="submit" class="btn btn-primary btn-full">📨 Send Message</button>
+            </form>
+          </article>
+
+          <!-- Map + Info -->
+          <div>
+            <div class="map-placeholder reveal">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.1!2d18.4!3d-33.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDU0JzAwLjAiUyAxOMKwMjQnMDAuMCJF!5e0!3m2!1sen!2sza!4v1700000000000"
+                allowfullscreen
+                loading="lazy"
+                title="Wanderlust Voyages office location in Cape Town"
+              ></iframe>
+            </div>
+
+            <article class="card reveal" style="margin-top:1.5rem;padding:1.8rem;">
+              <h3>Office Hours</h3>
+              <hr />
+              <table>
+                <thead>
+                  <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Monday – Friday</td><td>08:00 – 17:00</td></tr>
+                  <tr><td>Saturday</td><td>09:00 – 13:00</td></tr>
+                  <tr><td>Sunday</td><td>Closed</td></tr>
+                  <tr><td>Public Holidays</td><td>Closed</td></tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Social / CTA Strip -->
+    <section class="alt-bg">
+      <div class="container text-center reveal">
+        <p class="label">✦ Follow Our Journey</p>
+        <h2>Stay Connected</h2>
+        <p>Follow us for daily destination inspiration, travel tips, and exclusive flash deals.</p>
+        <div class="flex-center mt-2" style="gap:1rem;flex-wrap:wrap;">
+          <a href="#" class="btn btn-dark">📘 Facebook</a>
+          <a href="#" class="btn btn-outline">📸 Instagram</a>
+          <a href="#" class="btn btn-dark">🐦 X / Twitter</a>
+          <a href="#" class="btn btn-outline">▶ YouTube</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="font-size:1.4rem;"><div class="logo-icon">✈</div>Wanderlust <span>Voyages</span></div>
+        <p>Crafting unforgettable travel experiences since 2012.</p>
+        <div class="social-links"><a href="#" class="social-link">f</a><a href="#" class="social-link">▣</a><a href="#" class="social-link">𝕏</a><a href="#" class="social-link">▶</a></div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Destinations</a></li><li><a href="booking.html">Book a Trip</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Destinations</h4><ul class="footer-links"><li><a href="services.html">Bali</a></li><li><a href="services.html">Swiss Alps</a></li><li><a href="services.html">Kyoto</a></li><li><a href="services.html">Santorini</a></li><li><a href="services.html">Maldives</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul class="footer-links" style="list-style:none;padding:0;"><li>📍 12 Explorer Street, Cape Town</li><li>📞 +27 21 555 0190</li><li>✉️ <a href="mailto:hello@wanderlustvoyages.co.za">hello@wanderlustvoyages.co.za</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Wanderlust Voyages. All rights reserved.</p></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

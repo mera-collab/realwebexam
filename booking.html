@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Trip — Wanderlust Voyages</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><div class="logo-icon">✈</div>Wanderlust <span>Voyages</span></a>
+      <nav>
+        <ul id="nav-menu" class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Destinations</a></li>
+          <li><a href="booking.html" class="nav-active">Book</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-btn" id="theme-toggle"><span id="theme-icon">🌙</span></button>
+        <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-top">
+    <div class="page-banner">
+      <div class="page-banner-content">
+        <p class="label" style="color:var(--gold-light);">✦ Reserve Your Spot</p>
+        <h1>Book Your Dream Trip</h1>
+        <p>Complete the form below and your personal travel consultant will be in touch within 24 hours.</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="grid-2" style="gap:3rem;align-items:start;">
+
+          <!-- Booking Form -->
+          <article class="card reveal" style="padding:2.5rem;">
+            <p class="label">✦ Booking Inquiry</p>
+            <h2 style="margin-bottom:0.5rem;">Your Details</h2>
+            <hr />
+
+            <div id="booking-msg" class="form-message"></div>
+
+            <form id="bookingForm" novalidate>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="b-name">Full Name *</label>
+                  <input type="text" id="b-name" placeholder="e.g. Zanele Mokoena" />
+                </div>
+                <div class="form-group">
+                  <label for="b-email">Email Address *</label>
+                  <input type="email" id="b-email" placeholder="you@email.com" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="b-phone">Phone Number</label>
+                  <input type="tel" id="b-phone" placeholder="+27 82 000 0000" />
+                </div>
+                <div class="form-group">
+                  <label for="b-pax">Number of Travellers</label>
+                  <select id="b-pax">
+                    <option value="">Select...</option>
+                    <option value="1">1 (Solo)</option>
+                    <option value="2">2 (Couple)</option>
+                    <option value="3-4">3–4 (Small Group)</option>
+                    <option value="5+">5+ (Large Group)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="b-dest">Preferred Destination *</label>
+                <select id="b-dest">
+                  <option value="">Select a destination...</option>
+                  <option value="Bali, Indonesia">Bali, Indonesia</option>
+                  <option value="Swiss Alps, Switzerland">Swiss Alps, Switzerland</option>
+                  <option value="Kyoto, Japan">Kyoto, Japan</option>
+                  <option value="Maldives">Maldives</option>
+                  <option value="Kenya Safari">Kenya Big Five Safari</option>
+                  <option value="Greek Islands">Greek Island Odyssey</option>
+                  <option value="Custom">Custom / Not Sure Yet</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="b-depart">Preferred Departure Date</label>
+                  <input type="date" id="b-depart" />
+                </div>
+                <div class="form-group">
+                  <label for="b-duration">Trip Duration</label>
+                  <select id="b-duration">
+                    <option value="">Select...</option>
+                    <option value="5-7">5–7 nights</option>
+                    <option value="8-10">8–10 nights</option>
+                    <option value="11-14">11–14 nights</option>
+                    <option value="15+">15+ nights</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="b-budget">Budget per Person (ZAR)</label>
+                <select id="b-budget">
+                  <option value="">Select a range...</option>
+                  <option value="under-15k">Under R 15,000</option>
+                  <option value="15-25k">R 15,000 – R 25,000</option>
+                  <option value="25-40k">R 25,000 – R 40,000</option>
+                  <option value="40k+">R 40,000+</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="b-notes">Special Requests or Notes</label>
+                <textarea id="b-notes" rows="4" placeholder="E.g. honeymoon, dietary requirements, accessibility needs, specific activities…"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">🌍 Submit Booking Inquiry</button>
+            </form>
+          </article>
+
+          <!-- Sidebar Info -->
+          <aside class="reveal">
+            <article class="card" style="padding:1.8rem;margin-bottom:1.5rem;">
+              <h3>📋 How It Works</h3>
+              <hr />
+              <ol style="padding-left:1.3rem;">
+                <li style="margin:0.7rem 0;">Submit your inquiry using this form.</li>
+                <li style="margin:0.7rem 0;">A dedicated consultant contacts you within 24 hours.</li>
+                <li style="margin:0.7rem 0;">We craft a personalised itinerary just for you.</li>
+                <li style="margin:0.7rem 0;">Pay the 30% deposit to confirm your booking.</li>
+                <li style="margin:0.7rem 0;">Pack your bags — adventure awaits! ✈️</li>
+              </ol>
+            </article>
+
+            <article class="card" style="padding:1.8rem;margin-bottom:1.5rem;background:var(--teal-dark);border:none;color:white;">
+              <h3 style="color:white;">📞 Speak to Us Directly</h3>
+              <p style="color:rgba(255,255,255,0.75);margin:0.5rem 0;">Prefer to talk? Our team is available Monday–Friday, 08:00–17:00.</p>
+              <p style="color:var(--gold-light);font-size:1.4rem;font-family:var(--font-display);font-weight:700;margin-top:0.8rem;">+27 21 555 0190</p>
+              <p style="color:rgba(255,255,255,0.65);font-size:0.88rem;">hello@wanderlustvoyages.co.za</p>
+            </article>
+
+            <article class="card" style="padding:1.8rem;">
+              <h3>🛡️ Booking Promise</h3>
+              <hr />
+              <ul style="list-style:none;padding:0;">
+                <li style="margin:0.6rem 0;font-size:0.92rem;">✅ No booking fees</li>
+                <li style="margin:0.6rem 0;font-size:0.92rem;">✅ Price-match guarantee</li>
+                <li style="margin:0.6rem 0;font-size:0.92rem;">✅ Flexible cancellation options</li>
+                <li style="margin:0.6rem 0;font-size:0.92rem;">✅ SATSA accredited &amp; bonded</li>
+                <li style="margin:0.6rem 0;font-size:0.92rem;">✅ 24/7 emergency support</li>
+              </ul>
+            </article>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="font-size:1.4rem;"><div class="logo-icon">✈</div>Wanderlust <span>Voyages</span></div>
+        <p>Crafting unforgettable travel experiences since 2012.</p>
+        <div class="social-links"><a href="#" class="social-link">f</a><a href="#" class="social-link">▣</a><a href="#" class="social-link">𝕏</a><a href="#" class="social-link">▶</a></div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Destinations</a></li><li><a href="booking.html">Book a Trip</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Destinations</h4><ul class="footer-links"><li><a href="services.html">Bali</a></li><li><a href="services.html">Swiss Alps</a></li><li><a href="services.html">Kyoto</a></li><li><a href="services.html">Santorini</a></li><li><a href="services.html">Maldives</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul class="footer-links" style="list-style:none;padding:0;"><li>📍 12 Explorer Street, Cape Town</li><li>📞 +27 21 555 0190</li><li>✉️ <a href="mailto:hello@wanderlustvoyages.co.za">hello@wanderlustvoyages.co.za</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Wanderlust Voyages. All rights reserved.</p></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
